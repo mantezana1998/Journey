@@ -6,8 +6,8 @@ import Measurements from '../src/pages/Measurements/Measurements'
 function App() {
   return (
     <Routes>
-      <Route>
-        <Route path="/" element={<HomePage />}/>
+      <Route path="/">
+        <Route index element={<HomePage />}/>
         <Route path="/measurements" element={<Measurements />}/>
       </Route>
     </Routes>

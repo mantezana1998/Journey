@@ -1,19 +1,16 @@
 import './App.css';
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom";
+import HomePage from '../src/pages/HomePage/HomePage';
+import Measurements from '../src/pages/Measurements/Measurements'
 
 function App() {
   return (
-    <>
-      <h1>Hello World!</h1>
-
-      {/* <Routes>
-        <Route path="/">
-          <Route index>
-            <Route path="measurements" />
-          </Route>
-        </Route>
-      </Routes> */}
-    </>
+    <Routes>
+      <Route>
+        <Route path="/" element={<HomePage />}/>
+        <Route path="/measurements" element={<Measurements />}/>
+      </Route>
+    </Routes>
   );
 }
 

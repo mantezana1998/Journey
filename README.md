@@ -1,71 +1,74 @@
-# Getting Started with Create React App
+<div align="center">
+   <h1>Journey</h1>
+   <h3>Passion Project (In progress)</h3>
+   <h5>Max Antezana</h5>
+   
+   <a href="https://mantezana1998.github.io/portfolio/" target="_blank">
+      <img src="https://img.shields.io/badge/-Portfolio:_user.github.io-darkgreen?style=flat&logo=medium"/>
+   </a>
+   <a href="https://www.linkedin.com/in/antezana-max/" target="_blank">
+      <img src="https://img.shields.io/badge/-linkedin.com/in/user-blue?style=flat&``logo=Linkedin&logoColor=white">
+   </a> 
+   <a href="mailto:maximo00antezana@gmail.com" target="_blank">
+      <img src="https://img.shields.io/badge/-user@gmail.com-c14438?style=flat&logo=Gmail&``logoColor=white">
+   </a>
+</div>
+   
+<h1>:pencil: Description</h1>
+<p>Journey is an application that helps parents who have children diagnosed with Autism Spectrum Disorder by recording behaviors outside of session. As a previous applied behavior analysis (ABA) therapist, I saw a pattern in my clients and how hard it is for parents to track regular and irregular behaviors outside of therapy sessions which made it harder so see clear and precise progress. Journey will assist parents to recording behaviors and could then be shared with the ABA therapist and clinical managers.</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## :computer: Technologies 
 
-## Available Scripts
+![MongoDB](https://img.shields.io/badge/-MongoDB-333?style=flat&logo=mongodb)
+![Express](https://img.shields.io/badge/-Express-333?style=flat&logo=express)
+![React](https://img.shields.io/badge/-React-333?style=flat&logo=react) 
+![Node](https://img.shields.io/badge/-Node.js-333?style=flat&logo=node.js)
+![Semantic UI React](https://img.shields.io/badge/-Semantic%20UI%20React-333?style=flat&logo=semanticuireact)
+![AWS S3](https://img.shields.io/badge/-AWS_S3-333?style=flat&logo=amazons3)
+![JWT](https://img.shields.io/badge/-JSON_Web_Tokens-333?style=flat&logo=jsonwebtokens)
+![Mongoose ODM](https://img.shields.io/badge/-Mongoose_ODM-333?style=flat&logo=mongodb)
+![JavaScript](https://img.shields.io/badge/-JavaScript-333?style=flat&logo=javascript) 
+![HTML5](https://img.shields.io/badge/-HTML5-333?style=flat&logo=html5)
+![CSS3](https://img.shields.io/badge/-CSS-333?style=flat&logo=css3)
+![Trello](https://img.shields.io/badge/-Trello-333?style=flat&logo=trello) 
+![Heroku](https://img.shields.io/badge/-Heroku-333?style=flat&logo=heroku)
+![Markdown](https://img.shields.io/badge/-Markdown-333?style=flat&logo=markdown)
+![Git](https://img.shields.io/badge/-Git-333?style=flat&logo=git)
+![Github](https://img.shields.io/badge/-GitHub-333?style=flat&logo=github)
+![VSCode](https://img.shields.io/badge/-VS_Code-333?style=flat&logo=visualstudio)
+![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-333?style=flat&logo=postgresql)
+![Materialize CSS](https://img.shields.io/badge/-Materialize_CSS-333?style=flat&logo=materialdesign) 
 
-In the project directory, you can run:
+<h2> :question: What data will parents be able to record? </h2>
 
-### `npm start`
+<h3> :boom: Behaviors </h3>
+<details open>
+<summary>Frequency of Behaviors</summary>
+<ol>
+    <li>The user will be able to have a stopwatch and increment when a certain behavior is occurring.</li>
+    <li>This specific behavior can be labeled and kept in a folder.</li>
+</ol>
+</details>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<details open>   
+<summary>Durations</summary>
+<ol>
+    <li>Measure how long a behavior is lasting.</li>
+</ol>
+</details>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<details open>
+<h3>Latency</h3>
+<summary>Trello Board</summary>
+<ol>
+    <li>Record how long it takes for behaviors to start and end after a verbal or nonverbal cue has been issued.</li>
+</ol>   
+</details>
 
-### `npm test`
+## :fast_forward: Steps   
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Upcoming Features
 
-### `npm run build`
+- [ ] Mobile app for Journey 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Journey
+- [ ] Ability to share one or multiple behaviors to others

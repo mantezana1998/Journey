@@ -1,17 +1,17 @@
 import './HomePage.css'
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Button } from "react-bootstrap"
 
 export default function HomePage(){
     return(
     <>
         <body>
-            <header>
+            <main>
                 <Container>
                     <Row>
                         <Col>
                         <h1>Start the journey to happiness and wellness with outcome-based autism care.</h1>
                         <p>Delivering data collection to help your loved one achieve their goals.</p>
-                        <button>Get Started</button>
+                        <Button variant="primary" size="lg">Get Started</Button>
                         </Col>
 
                         <Col>
@@ -19,7 +19,7 @@ export default function HomePage(){
                         </Col>
                     </Row>
                 </Container>
-            </header>
+            </main>
         </body>
     </>    
     )

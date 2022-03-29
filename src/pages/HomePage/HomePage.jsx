@@ -1,5 +1,5 @@
-import Footer from '../../components/Footer/Footer'
 import './HomePage.css'
+import { Alert } from "react-bootstrap";
 
 export default function HomePage(){
     return(
@@ -19,7 +19,6 @@ export default function HomePage(){
                 </div>
             </header>
         </body>
-        <Footer />
     </>    
     )
 }

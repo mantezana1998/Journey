@@ -5,25 +5,22 @@ export default function Header (){
         <>
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
-                <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                <Navbar.Brand href="#home">Journey</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                    <Nav.Link href="#features">Features</Nav.Link>
-                    <Nav.Link href="#pricing">Pricing</Nav.Link>
-                    <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                    <Nav.Link href="">About Us</Nav.Link>
+                    <Nav.Link href="">Solutions</Nav.Link>
+                    <NavDropdown title="Features" id="collasible-nav-dropdown">
+                        <NavDropdown.Item href="">Record Behaviors</NavDropdown.Item>
+                        <NavDropdown.Item href="">See Progress</NavDropdown.Item>
+                        <NavDropdown.Item href="">Graph progress</NavDropdown.Item>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                        <NavDropdown.Item href="">See Sample Sheet</NavDropdown.Item>
                     </NavDropdown>
                     </Nav>
                     <Nav>
-                    <Nav.Link href="#deets">More deets</Nav.Link>
-                    <Nav.Link eventKey={2} href="#memes">
-                        Dank memes
-                    </Nav.Link>
+                    <Nav.Link href="">Contact Us</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

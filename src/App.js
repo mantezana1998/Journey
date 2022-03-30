@@ -4,7 +4,7 @@ import HomePage from '../src/pages/HomePage/HomePage';
 import Measurements from '../src/pages/Measurements/Measurements';
 import Layout from '../src/pages/Layout/Layout';
 
-function App() {
+export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
@@ -14,5 +14,3 @@ function App() {
     </Routes>
   );
 }
-
-export default App;

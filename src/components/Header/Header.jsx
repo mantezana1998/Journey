@@ -1,4 +1,5 @@
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import { MDBBtn } from 'mdb-react-ui-kit';
 
 export default function Header (){
     return (
@@ -11,6 +12,7 @@ export default function Header (){
                     <Nav className="me-auto">
                     <Nav.Link href="">About Us</Nav.Link>
                     <Nav.Link href="">Solutions</Nav.Link>
+                    <Nav.Link href="">Contact Us</Nav.Link>
                     <NavDropdown title="Features" id="collasible-nav-dropdown">
                         <NavDropdown.Item href="">Record Behaviors</NavDropdown.Item>
                         <NavDropdown.Item href="">See Progress</NavDropdown.Item>
@@ -20,7 +22,7 @@ export default function Header (){
                     </NavDropdown>
                     </Nav>
                     <Nav>
-                    <Nav.Link href="">Contact Us</Nav.Link>
+                    <MDBBtn>Start Journey</MDBBtn>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

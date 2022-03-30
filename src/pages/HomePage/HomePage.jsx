@@ -1,4 +1,3 @@
-import './HomePage.css'
 import { Container, Row, Col, Button } from "react-bootstrap"
 
 export default function HomePage(){

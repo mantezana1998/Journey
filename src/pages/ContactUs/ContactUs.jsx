@@ -14,9 +14,9 @@ export default function ContactUs(){
             </Col>
 
             <Col>
-                <textarea id="textarea" cols="30" rows="10" placeholder="write here..."></textarea>
-                <textarea id="textarea" cols="30" rows="10" placeholder="write here..."></textarea>
-                <textarea id="textarea" cols="30" rows="10" placeholder="write here..."></textarea>
+                <textarea id="textarea" cols="30" rows="1" placeholder="Enter your Name"></textarea>
+                <textarea id="textarea" cols="30" rows="1" placeholder="Enter a valid email address"></textarea>
+                <textarea id="textarea" cols="30" rows="5" placeholder="Enter your message"></textarea>
                 <Button variant="primary" size="lg">Submit</Button>
             </Col>
         </Row>

@@ -11,7 +11,7 @@ export default function Header (){
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
                         <Nav.Link href="/aboutus">About Us</Nav.Link>
-                        <Nav.Link href="">Solutions</Nav.Link>
+                        <Nav.Link href="/solutions">Solutions</Nav.Link>
                         <Nav.Link href="/contactus">Contact Us</Nav.Link>
                         <NavDropdown title="Features" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="">Record Behaviors</NavDropdown.Item>
@@ -22,7 +22,7 @@ export default function Header (){
                         </NavDropdown>
                         </Nav>
                         <Nav>
-                        <MDBBtn>Start Journey</MDBBtn>
+                        <MDBBtn href="/measurements">Start Journey</MDBBtn>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

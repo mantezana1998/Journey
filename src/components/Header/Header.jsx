@@ -6,13 +6,13 @@ export default function Header (){
         <>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home">Journey</Navbar.Brand>
+                    <Navbar.Brand href="/">Journey</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                        <Nav.Link href="">About Us</Nav.Link>
+                        <Nav.Link href="/aboutus">About Us</Nav.Link>
                         <Nav.Link href="">Solutions</Nav.Link>
-                        <Nav.Link href="">Contact Us</Nav.Link>
+                        <Nav.Link href="/contactus">Contact Us</Nav.Link>
                         <NavDropdown title="Features" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="">Record Behaviors</NavDropdown.Item>
                             <NavDropdown.Item href="">See Progress</NavDropdown.Item>

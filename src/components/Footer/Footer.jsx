@@ -1,3 +1,4 @@
+import './Footer.css';
 import {
     MDBFooter,
     MDBContainer,
@@ -10,7 +11,7 @@ import {
 
 export default function Footer (){
   return (
-    <MDBFooter className='text-center' color='white' bgColor='dark'>
+    <MDBFooter id="footer" className='text-center' color='white' bgColor='dark'>
     <MDBContainer className='p-4'>
       <section className='mb-4'>
         <a className='btn btn-outline-light btn-floating m-1' href="mailto: maximo00antezana@gmail.com" role='button'>

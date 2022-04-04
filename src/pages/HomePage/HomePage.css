@@ -1,8 +1,12 @@
-#header {
+/* #header {
     /* margin-right: 5%; */
-}
 
 #header-intro {
     margin: 25% 0 0 5%;
+}
+
+#tab-groups {
+    display: grid;
+	place-items: center
 }
 

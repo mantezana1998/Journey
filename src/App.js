@@ -5,6 +5,7 @@ import Measurements from '../src/pages/Measurements/Measurements';
 import Layout from '../src/pages/Layout/Layout';
 import AboutUs from '../src/pages/AboutUs/AboutUs';
 import ContactUs from '../src/pages/ContactUs/ContactUs';
+import SignUp from '../src/pages/SignUp/SignUp';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path='aboutus' element={<AboutUs />}/>
         <Route path="contactus" element={<ContactUs />}/>
         <Route path="measurements" element={<Measurements />}/>
+        <Route path="signup" element={<SignUp />}/>
       </Route>
     </Routes>
   );

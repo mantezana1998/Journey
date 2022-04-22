@@ -22,7 +22,7 @@ export default function Header (){
                         </NavDropdown> */}
                         </Nav>
                         <Nav>
-                        <MDBBtn href="/">Start Journey</MDBBtn>
+                        <MDBBtn href="/signup">Start Journey</MDBBtn>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

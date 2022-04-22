@@ -12,7 +12,7 @@ export default function HomePage(){
                         <div id="header-intro">
                             <h3>Start the journey to happiness and wellness with outcome-based autism care.</h3>
                             <h6>Delivering data collection to help your loved one achieve their goals.</h6>
-                            <Button variant="primary" size="lg">Get Started</Button>
+                            <Button variant="primary" size="lg" href='/signup'>Get Started</Button>
                         </div>
                     </Col>
 

@@ -1,4 +1,5 @@
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import Stack from 'react-bootstrap/Stack'
 
 export default function MeasurementCard (){
 
@@ -12,7 +13,7 @@ export default function MeasurementCard (){
             measurementName: "Duration", 
             description: "The time length of how long a behavior last."
         },
-
+        
         {
             measurementName: "Latency Recording",
             description: "Measuring the time that it takes for a behavior to occur after a verbal cue or an event"
@@ -24,23 +25,27 @@ export default function MeasurementCard (){
         }
     ]
 
-    // involves observing whether a behavior occurs or does not occur during specified time periods
-
     return (
     <>
-        <Container>
-            <Row className="justify-content-md-center">
-                <Card style={{ width: '18rem' }}>
+        <Stack>
+            <br />
+            <Card className="text-left">
                 {measurements.map((measurement) => (
-                <Card.Body>
-                    <Card.Title> {measurement.measurementName} </Card.Title>
-                    <Card.Text> {measurement.description} </Card.Text>
+                <>
+                    <Card.Header>{measurement.measurementName}</Card.Header>
+                    <Card.Body>
+                    <Card.Title>Special title treatment</Card.Title>
+                    <Card.Text>
+                        With supporting text below as a natural lead-in to additional content.
+                    </Card.Text>
                     <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
+                    </Card.Body>
+                    <Card.Footer className="text-muted">2 days ago</Card.Footer>
+                </>
                 ))}
-                </Card>
-            </Row>
-        </Container>
+            </Card>
+            <br />
+        </Stack>
     </>
     )
 }

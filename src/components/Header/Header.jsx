@@ -13,13 +13,13 @@ export default function Header (){
                         <Nav.Link href="/aboutus">About Us</Nav.Link>
                         <Nav.Link href="/measurements">What We Record</Nav.Link>
                         <Nav.Link href="/contactus">Contact Us</Nav.Link>
-                        <NavDropdown title="Features" id="collasible-nav-dropdown">
+                        {/* <NavDropdown title="Features" id="collasible-nav-dropdown">
                             <NavDropdown.Item href="">Record Behaviors</NavDropdown.Item>
                             <NavDropdown.Item href="">See Progress</NavDropdown.Item>
                             <NavDropdown.Item href="">Graph progress</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="">See Sample Sheet</NavDropdown.Item>
-                        </NavDropdown>
+                        </NavDropdown> */}
                         </Nav>
                         <Nav>
                         <MDBBtn href="/">Start Journey</MDBBtn>

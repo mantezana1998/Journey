@@ -1,11 +1,11 @@
 import { Form, Button } from 'react-bootstrap';
-import './SignUp.css';
+import './Login.css';
 
-export default function SignUp(){
+export default function Login(){
     return(
         <>
-            <h1 className="sign-up-title">Login</h1>
-            <Form className="sign-up-form">
+            <h1 className="login-title">Login</h1>
+            <Form className="login-form">
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
                     <Form.Control type="email" placeholder="Enter email" />

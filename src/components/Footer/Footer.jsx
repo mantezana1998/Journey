@@ -14,23 +14,15 @@ export default function Footer (){
     <MDBFooter id="footer" className='text-center' color='white' bgColor='dark'>
     <MDBContainer className='p-4'>
       <section className='mb-4'>
-        <a className='btn btn-outline-light btn-floating m-1' href="mailto: maximo00antezana@gmail.com" role='button'>
+         <a className='btn btn-outline-light btn-floating m-1' href="mailto: maximo00antezana@gmail.com" role='button'>
           <MDBIcon fab icon='google' />
-        </a>
-        {/* <a className='btn btn-outline-light btn-floating m-1' href="Antezana_Max_Resume.pdf" download='newfilename' role='button'>
-          <MDBIcon fas icon="file" />
-        </a> */}
-        <a className='btn btn-outline-light btn-floating m-1' href='mailto: maximo00antezana@gmail.com' role='button'>
-          <MDBIcon far icon="envelope" />
         </a>
         <a className='btn btn-outline-light btn-floating m-1' href='#!' role='button'>
           <MDBIcon fab icon='instagram' />
         </a>
-
         <a className='btn btn-outline-light btn-floating m-1' href='https://www.linkedin.com/in/antezana-max/' role='button'>
           <MDBIcon fab icon='linkedin-in' />
         </a>
-
         <a className='btn btn-outline-light btn-floating m-1' href='https://github.com/mantezana1998' role='button'>
           <MDBIcon fab icon='github' />
         </a>
@@ -66,7 +58,7 @@ export default function Footer (){
 
       <section className=''>
         <MDBRow>
-          <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
+          <MDBCol md='4' className='mb-4 mb-md-0'>
             <h5 className='text-uppercase'>Autism Speaks</h5>
 
             <ul className='list-unstyled mb-0'>
@@ -93,7 +85,7 @@ export default function Footer (){
             </ul>
           </MDBCol>
 
-          <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
+          <MDBCol md='4' className='mb-4 mb-md-0'>
             <h5 className='text-uppercase'>ABAI</h5>
 
             <ul className='list-unstyled mb-0'>
@@ -120,7 +112,7 @@ export default function Footer (){
             </ul>
           </MDBCol>
 
-          <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
+          {/* <MDBCol md='6' className='mb-4 mb-md-0'>
             <h5 className='text-uppercase'>Helpful Links</h5>
 
             <ul className='list-unstyled mb-0'>
@@ -145,9 +137,9 @@ export default function Footer (){
                 </a>
               </li>
             </ul>
-          </MDBCol>
+          </MDBCol> */}
 
-          <MDBCol lg='3' md='6' className='mb-4 mb-md-0'>
+          <MDBCol md='4' className='mb-4 mb-md-0'>
             <h5 className='text-uppercase'>Articles</h5>
 
             <ul className='list-unstyled mb-0'>
@@ -178,7 +170,7 @@ export default function Footer (){
     </MDBContainer>
 
     <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-      © 2022 Copyright:
+      © 2022 Copyright: 
       <a className='text-white' href='https://mdbootstrap.com/'>
         Journey
       </a>

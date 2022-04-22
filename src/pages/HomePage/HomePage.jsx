@@ -26,24 +26,20 @@ export default function HomePage(){
                 <h1>How it works</h1>
                 <Tabs defaultActiveKey="home" id="uncontrolled-tab-example" className="mb-3">
                     <Tab eventKey="home" title="Create Account">
-                        <h3>Sign up for free and record all your data.</h3>
-                        <p>See the progress </p> 
+                        <h3>Try Journey for free</h3>
+                        <p>Transform the way you see and record progress. Get started in minutes.</p> 
                     </Tab>
                     <Tab eventKey="record data" title="Record Data" BsFillBugFill>
-                        <h3>Record your data and see your loved ones progress.</h3>
-                        <p>See the progress </p> 
+                        <h3>Record your data and see your loved ones progress</h3>
+                        <p>Explore our many options of recording data.</p> 
                     </Tab>
                     <Tab eventKey="graph data" title="Graph Data">
-                        <h3>Graph data on a chart.</h3>
-                        <p>See the progress </p> 
+                        <h3>Check out our automatic graphing features to compare progress</h3>
+                        <p>Choose from our many options of graphing features.</p> 
                     </Tab>
                     <Tab eventKey="send data" title="Send Data">
-                        <h3>Send data to your ABA services or therapist.</h3>
-                        <p>See the progress </p> 
-                    </Tab>
-                    <Tab eventKey="see progress" title="See Progress">
-                        <h3>See the numbers on how much progress your loved one has done.</h3>
-                        <p>See the progress </p> 
+                        <h3>Send data that matters</h3>
+                        <p>Send a copy of the data to your therapist and help them reach their goals quicker.</p> 
                     </Tab>
                 </Tabs>
             </div>

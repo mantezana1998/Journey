@@ -4,7 +4,7 @@ import './SignUp.css';
 export default function SignUp(){
     return(
         <>
-            <h1 className="sign-up-title">Login</h1>
+            <h1 className="sign-up-title">Sign Up</h1>
             <Form className="sign-up-form">
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
@@ -18,9 +18,9 @@ export default function SignUp(){
                     <Form.Label>Password</Form.Label>
                     <Form.Control type="password" placeholder="Password" />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                {/* <Form.Group className="mb-3" controlId="formBasicCheckbox">
                     <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
+                </Form.Group> */}
                 <Button variant="primary" type="submit">
                     Submit
                 </Button>

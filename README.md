@@ -109,18 +109,28 @@
 
 <details open>
    <summary>Frequency of Behavior</summary>
+   <p>Parents will be about to count how often a specific behavior occurs during an interval of time they choose.</p>
+   <p>Example) Max yelled 6 times during the 30 minutes of homework time. The parent records 6 occurrences  in 30 minutes.</p>
 </details>
 
 <details>
    <summary>Duration of Behavior</summary>
+   <p>Parents will be about to record how long a specific behavior occurs during an interval of time they choose.</p>
+   <p>Example) Max had a tantrum for 20 minutes. The parent records 20 minutes.</p>
 </details>
 
 <details>
    <summary>Interval Recording of Behavior</summary>
+   <p>Parents can measure the time it takes for a behavior to occur after a verbal cue or event.</p>
+   <p>Example) Max’s mom gives a verbal cue, “It’s time to wash our hands!” and it took Max 8 seconds to get up and walk towards the sink and turn on the faucet. The parent records 8 seconds.</p>
 </details>
 
 <details>
    <summary>Latency Recording of Behavior</summary>
+   <p>Parents will measure when a behavior occurs or doesn't occur during specified time frames.</p>
+   <p>Example when behavior occurs) Max is playing tag with his siblings (10 minutes) and the RBT (Registered Behavior Technician) records how many times he is aggressive (shove, kick, or shoulder) his siblings. Max didn’t hit anybody. The RBT recorded 0 in 10 minutes.</p>
+
+   <p>Example when behavior doesn’t occur)  Max shows aggression when he loses in any game. Throughout the session, the RBT and Max played 4 games, Max lost all 4 games, and didn’t hit the RBT in the shoulder. The RBT recorded 0 in 4 games.</p>
 </details>
 
 ## :fast_forward: Steps   

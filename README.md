@@ -15,7 +15,7 @@
 
    <h5>DiAnne Bueno Lozano</h5>
    
-   <a href="https://ditabu.github.io/portfolio/" target="_blank">
+   <a href="https://github.com/ditabu" target="_blank">
       <img src="https://img.shields.io/badge/-Portfolio:_ditabu.github.io-darkgreen?style=flat&logo=medium"/>
    </a>
    <a href="https://www.linkedin.com/in/ditabu/" target="_blank">
@@ -27,7 +27,7 @@
 
    <h5>Steven Ballerini</h5>
    
-   <a href="https://StevenB94.github.io/portfolio/" target="_blank">
+   <a href="https://github.com/StevenB94" target="_blank">
       <img src="https://img.shields.io/badge/-Portfolio:_StevenB94.github.io-darkgreen?style=flat&logo=medium"/>
    </a>
    <a href="https://www.linkedin.com/in/stevenballerini1/" target="_blank">

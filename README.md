@@ -81,6 +81,13 @@
    [Visit Figma Link](https://www.figma.com/file/Qy850g1X5FqhrjhRPTRBPG/Untitled?node-id=0%3A1)
 </details>
 
+## :thought_balloon: ERD
+
+<details>
+   <summary>ERD</summary>
+   [ERD](https://i.imgur.com/9pyPBaG.png)
+</details>
+
 ## :computer: Technologies 
 
 ![MongoDB](https://img.shields.io/badge/-MongoDB-333?style=flat&logo=mongodb)

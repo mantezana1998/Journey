@@ -12,6 +12,30 @@
    <a href="mailto:maximo00antezana@gmail.com" target="_blank">
       <img src="https://img.shields.io/badge/-Maximo00Antezana@gmail.com-c14438?style=flat&logo=Gmail&``logoColor=white">
    </a>
+
+   <h5>DiAnne Bueno Lozano</h5>
+   
+   <a href="https://ditabu.github.io/portfolio/" target="_blank">
+      <img src="https://img.shields.io/badge/-Portfolio:_ditabu.github.io-darkgreen?style=flat&logo=medium"/>
+   </a>
+   <a href="https://www.linkedin.com/in/ditabu/" target="_blank">
+      <img src="https://img.shields.io/badge/-linkedin.com/in/ditabu-blue?style=flat&``logo=Linkedin&logoColor=white">
+   </a> 
+   <a href="mailto:dibueno@gmail.com" target="_blank">
+      <img src="https://img.shields.io/badge/-Dibueno@gmail.com-c14438?style=flat&logo=Gmail&``logoColor=white">
+   </a>
+
+   <h5>Steven Ballerini</h5>
+   
+   <a href="https://StevenB94.github.io/portfolio/" target="_blank">
+      <img src="https://img.shields.io/badge/-Portfolio:_StevenB94.github.io-darkgreen?style=flat&logo=medium"/>
+   </a>
+   <a href="https://www.linkedin.com/in/stevenballerini1/" target="_blank">
+      <img src="https://img.shields.io/badge/-linkedin.com/in/stevenballerini1-blue?style=flat&``logo=Linkedin&logoColor=white">
+   </a> 
+   <a href="mailto:ballerini.steven@gmail.com" target="_blank">
+      <img src="https://img.shields.io/badge/-ballerini.steven@gmail.com-c14438?style=flat&logo=Gmail&``logoColor=white">
+   </a>
 </div>
    
 <h1>:pencil: Description</h1>

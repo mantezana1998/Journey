@@ -7,7 +7,7 @@
       <img src="https://img.shields.io/badge/-Portfolio:_mantezana1998.github.io-darkgreen?style=flat&logo=medium"/>
    </a>
    <a href="https://www.linkedin.com/in/antezana-max/" target="_blank">
-      <img src="https://img.shields.io/badge/-linkedin.com/in/antezana-max-blue?style=flat&``logo=Linkedin&logoColor=white">
+      <img src="https://img.shields.io/badge/-linkedin.com/in/user-blue?style=flat&``logo=Linkedin&logoColor=white">
    </a> 
    <a href="mailto:maximo00antezana@gmail.com" target="_blank">
       <img src="https://img.shields.io/badge/-Maximo00Antezana@gmail.com-c14438?style=flat&logo=Gmail&``logoColor=white">

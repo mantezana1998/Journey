@@ -45,31 +45,35 @@
 
 <details>
    <summary>Home Page</summary>
-   <h3 align="center">Home Page</h3><img src="https://i.imgur.com/GrogAMD.png" width="700"/> 
+   <h3 align="center">Home Page</h3>
+   <img src="https://i.imgur.com/GrogAMD.png" width="700"/> 
 </details>
 
 <details>
    <summary>Sign in/Login</summary>
-   <!-- Hidden information goes here -->
-   <p>hello world!</p>
+   <h3 align="center">Sign In/Login</h3>
+   <img src="https://i.imgur.com/zUgEP8X.png" width="700"/> 
 </details>
 
 <details>
    <summary>Dashboard</summary>
-   <!-- Hidden information goes here -->
-   <p>hello world!</p>
+   <h3 align="center">Dashboard</h3>
+   <img src="https://i.imgur.com/dCIA2Cs.png" width="700"/> 
 </details>
 
 <details>
    <summary>Recording Behavior</summary>
-   <!-- Hidden information goes here -->
-   <p>hello world!</p>
+   <h3 align="center">See Created Behavior</h3>
+   <img src="https://i.imgur.com/cgICssa.png" width="700"/> 
+
+   <h3 align="center">Recording Behavior</h3>
+   <img src="https://i.imgur.com/9xZFFoW.png" width="700"/> 
 </details>
 
 <details>
    <summary>Seeing Progression</summary>
-   <!-- Hidden information goes here -->
-   <p>hello world!</p>
+   <h3 align="center">Seeing Progression</h3>
+   <img src="https://i.imgur.com/oRdATMr.png" width="700"/> 
 </details>
 
 ## :computer: Technologies 
@@ -101,10 +105,8 @@
    <summary>Frequency of Behaviors</summary>
    <ol>
       <li>The user will be able to have a stopwatch and increment when a certain behavior is occurring.</li>
-      <li>This specific behavior can be labeled and kept in a folder.</li>
-   </ol>
-</details>
-
+      <li>This specific behavior ca<h3 align="center">Home Page</h3>
+   <img src="" width="700"/> 
 <details open>   
    <summary>Durations</summary>
    <ol>

@@ -45,7 +45,7 @@
 
 <details>
    <summary>Home Page</summary>
-   ![Home and About Us Page](https://i.imgur.com/GrogAMD.png)
+   [Home & About Us Page](https://i.imgur.com/GrogAMD.png)
 </details>
 
 <details>

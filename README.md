@@ -39,18 +39,38 @@
 </div>
    
 <h1>:pencil: Description</h1>
-<p>Journey is an application that helps parents who have children diagnosed with Autism Spectrum Disorder by recording behaviors outside of session. As a previous applied behavior analysis (ABA) therapist, I saw a pattern in my clients and how hard it is for parents to track regular and irregular behaviors outside of therapy sessions which made it harder so see clear and precise progress. Journey will assist parents to recording behaviors and could then be shared with the ABA therapist and clinical managers.</p>
+<p>Journey is a web application that helps parents who have children diagnosed with Autism Spectrum Disorder by recording behaviors outside of session. As a previous applied behavior analysis (ABA) therapist, I saw a pattern in my clients and how hard it was for parents to track regular and irregular behaviors outside of therapy sessions which made progress slow. Journey will assist parents to recording behaviors and could then be shared with the ABA therapist and ABA agencies.</p>
 
 ## :floppy_disk: Wireframes
 
 <details>
-  <summary markdown="span">Click me to expand</summary>
-  <details>Embedded</details>
-   <p>Click here</p>
-  <details>Embedded</details>
-   <p>Click here</p>
-  <details>Embedded</details>
-   <p>Click here</p>
+   <summary>Home Page</summary>
+   <!-- Hidden information goes here -->
+   <p>hello world!</p>
+</details>
+
+<details>
+   <summary>Sign in/Login</summary>
+   <!-- Hidden information goes here -->
+   <p>hello world!</p>
+</details>
+
+<details>
+   <summary>Dashboard</summary>
+   <!-- Hidden information goes here -->
+   <p>hello world!</p>
+</details>
+
+<details>
+   <summary>Recording Behavior</summary>
+   <!-- Hidden information goes here -->
+   <p>hello world!</p>
+</details>
+
+<details>
+   <summary>Seeing Progression</summary>
+   <!-- Hidden information goes here -->
+   <p>hello world!</p>
 </details>
 
 ## :computer: Technologies 
@@ -79,26 +99,26 @@
 
 <h3> :boom: Behaviors </h3>
 <details open>
-<summary>Frequency of Behaviors</summary>
-<ol>
-    <li>The user will be able to have a stopwatch and increment when a certain behavior is occurring.</li>
-    <li>This specific behavior can be labeled and kept in a folder.</li>
-</ol>
+   <summary>Frequency of Behaviors</summary>
+   <ol>
+      <li>The user will be able to have a stopwatch and increment when a certain behavior is occurring.</li>
+      <li>This specific behavior can be labeled and kept in a folder.</li>
+   </ol>
 </details>
 
 <details open>   
-<summary>Durations</summary>
-<ol>
-    <li>Measure how long a behavior is lasting.</li>
-</ol>
+   <summary>Durations</summary>
+   <ol>
+      <li>Measure how long a behavior is lasting.</li>
+   </ol>
 </details>
 
 <details open>
-<h3>Latency</h3>
-<summary>Trello Board</summary>
-<ol>
-    <li>Record how long it takes for behaviors to start and end after a verbal or nonverbal cue has been issued.</li>
-</ol>   
+   <h3>Latency</h3>
+   <summary>Trello Board</summary>
+   <ol>
+      <li>Record how long it takes for behaviors to start and end after a verbal or nonverbal cue has been issued.</li>
+   </ol>   
 </details>
 
 ## :fast_forward: Steps   

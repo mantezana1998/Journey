@@ -22,11 +22,11 @@
 <details>
   <summary markdown="span">Click me to expand</summary>
   <details>Embedded</details>
-   <h1>Click here</h1>
+   <p>Click here</p>
   <details>Embedded</details>
-   <h1>Click here</h1>
+   <p>Click here</p>
   <details>Embedded</details>
-   <h1>Click here</h1>
+   <p>Click here</p>
 </details>
 
 ## :computer: Technologies 

@@ -85,7 +85,7 @@
 
 <details>
    <summary>ERD</summary>
-   [ERD](https://i.imgur.com/9pyPBaG.png)
+   <img src="https://i.imgur.com/9pyPBaG.png" width="700" alt="ERD"/> 
 </details>
 
 ## :computer: Technologies 

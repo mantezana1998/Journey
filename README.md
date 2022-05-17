@@ -45,8 +45,7 @@
 
 <details>
    <summary>Home Page</summary>
-   <!-- Hidden information goes here -->
-   <p>hello world!</p>
+   ![Home and About Us Page](https://i.imgur.com/GrogAMD.png)
 </details>
 
 <details>

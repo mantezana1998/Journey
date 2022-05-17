@@ -45,7 +45,7 @@
 
 <details>
    <summary>Home Page</summary>
-   ![Home](https://imgur.com/GrogAMD)
+   <h3 align="center">Home Page</h3><img src="https://i.imgur.com/GrogAMD.png" width="700"/> 
 </details>
 
 <details>

@@ -76,6 +76,11 @@
    <img src="https://i.imgur.com/oRdATMr.png" width="700"/> 
 </details>
 
+<details>
+   <summary>Link</summary>
+   [Visit Figma Link](https://www.figma.com/file/Qy850g1X5FqhrjhRPTRBPG/Untitled?node-id=0%3A1)
+</details>
+
 ## :computer: Technologies 
 
 ![MongoDB](https://img.shields.io/badge/-MongoDB-333?style=flat&logo=mongodb)
@@ -101,25 +106,21 @@
 <h2> :question: What data will parents be able to record? </h2>
 
 <h3> :boom: Behaviors </h3>
-<details open>
-   <summary>Frequency of Behaviors</summary>
-   <ol>
-      <li>The user will be able to have a stopwatch and increment when a certain behavior is occurring.</li>
-      <li>This specific behavior ca<h3 align="center">Home Page</h3>
-   <img src="" width="700"/> 
-<details open>   
-   <summary>Durations</summary>
-   <ol>
-      <li>Measure how long a behavior is lasting.</li>
-   </ol>
-</details>
 
 <details open>
-   <h3>Latency</h3>
-   <summary>Trello Board</summary>
-   <ol>
-      <li>Record how long it takes for behaviors to start and end after a verbal or nonverbal cue has been issued.</li>
-   </ol>   
+   <summary>Frequency of Behavior</summary>
+</details>
+
+<details>
+   <summary>Duration of Behavior</summary>
+</details>
+
+<details>
+   <summary>Interval Recording of Behavior</summary>
+</details>
+
+<details>
+   <summary>Latency Recording of Behavior</summary>
 </details>
 
 ## :fast_forward: Steps   

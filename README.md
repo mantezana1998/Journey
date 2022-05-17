@@ -17,9 +17,14 @@
 <h1>:pencil: Description</h1>
 <p>Journey is an application that helps parents who have children diagnosed with Autism Spectrum Disorder by recording behaviors outside of session. As a previous applied behavior analysis (ABA) therapist, I saw a pattern in my clients and how hard it is for parents to track regular and irregular behaviors outside of therapy sessions which made it harder so see clear and precise progress. Journey will assist parents to recording behaviors and could then be shared with the ABA therapist and clinical managers.</p>
 
-## Wireframes
+## :floppy_disk: Wireframes
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FQy850g1X5FqhrjhRPTRBPG%2FUntitled%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+<details>
+  <summary markdown="span">
+      <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FQy850g1X5FqhrjhRPTRBPG%2FUntitled%3Fnode-id%3D0%253A1" allowfullscreen>
+      </iframe>
+  </summary>
+</details>
 
 ## :computer: Technologies 
 

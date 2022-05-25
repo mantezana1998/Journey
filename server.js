@@ -1,9 +1,17 @@
 require('dotenv').config();
 const express = require('express');
-const app = express();
+const path = require('path');
+const logger = require('morgan');
+const favicon = require('serve-favicon');
 
 require('./config/database');
 
+const app = express();
+
+app.use(logger('dev'));
+app.use(express.json()); 
+app.use(express.static(path.join(__dirname, 'build')));
+app.use(require('./config/auth')); 
 app.use('/api/users', require('./routes/api/users'));
 
 app.get('/*', function(req, res){

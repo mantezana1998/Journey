@@ -7,7 +7,8 @@ import userService from '../../utils/userService';
 export default function SignUp(props){
 
     const navigate = useNavigate();
-
+    const [error, setError] = useState('');
+    const [selectedFile, setSelectedFile] = useState('');
     const [signup, setSignUp] = useState({
         email: '',
         password: ''
@@ -21,13 +22,23 @@ export default function SignUp(props){
 
     async function handleSubmit(e){
         e.preventDefault();
-        try{
-            await userService.signup();
-            props.handleSignUpOrLogin()
-            navigate('/')
-        }catch(err){
-            console.log(err.message)
+        const formData = new FormData();
+        formData.append('photo', selectedFile);
+        for(let key in signup){
+          formData.append(key, signup[key])
         }
+        try {
+          await userService.signup(formData);
+          props.handleSignUpOrLogin()
+          navigate('/dashboard')
+        }catch(err){
+          console.log(err.message)
+          setError(err.message)
+        }
+    }
+
+    function handleFileInput(e){
+        setSelectedFile(e.target.files[0])
     }
 
     return(
@@ -56,6 +67,14 @@ export default function SignUp(props){
                     placeholder="Password" 
                     onChange={handleChange}
                     value={signup.password}
+                    />
+                </Form.Group>
+                <Form.Group controlId="formFile" className="mb-3">
+                    <Form.Label>Default file input example</Form.Label>
+                    <Form.Control 
+                    type="file" 
+                    name="photo"
+                    onChange={handleFileInput}
                     />
                 </Form.Group>
                 <Button variant="primary" type="submit">

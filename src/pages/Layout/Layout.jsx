@@ -6,7 +6,7 @@ import './Layout.css';
 export default function Layout(){
     return(
     <>
-        <Header />    
+        <Header />  
         <Outlet />
         <Footer />
     </>

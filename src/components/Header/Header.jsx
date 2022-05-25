@@ -1,8 +1,9 @@
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 import { MDBBtn } from 'mdb-react-ui-kit';
+import './Header.css';
 
 export default function Header (){
-    return (
+    /* return (
         <>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
@@ -19,14 +20,39 @@ export default function Header (){
                             <NavDropdown.Item href="">Graph progress</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="">See Sample Sheet</NavDropdown.Item>
-                        </NavDropdown> */}
+                        </NavDropdown> // Will be closing tag here if need to make changes}
                         </Nav>
                         <Nav>
                         <MDBBtn href="/signup">Start Journey</MDBBtn>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
-            </Navbar>
+            </Navbar> //
         </>
+    ) */
+
+    return (
+    <>
+        <container>
+            <ul>
+            <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/aboutus">About Us</a>
+                </li>
+                <li>
+                    <a href="/measurements">Recordings</a>
+                </li>
+                <li>
+                    <a href="/contactus">Contact Us</a>
+                </li>
+                <li>
+                    <a class="active" href="/signup">Start Journey</a>
+                </li>
+            </ul>
+
+        </container>
+    </> 
     )
 }

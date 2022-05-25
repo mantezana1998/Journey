@@ -9,6 +9,7 @@ import SignUp from '../src/pages/SignUp/SignUp';
 import Login from '../src/pages/Login/Login';
 import userService from '../src/utils/userService';
 import { useState } from 'react';
+import Dashboard from '../src/pages/Dashboard/Dashboard';
 
 export default function App() {
 
@@ -27,6 +28,7 @@ export default function App() {
         <Route path="measurements" element={<Measurements />}/>
         <Route path="signup" element={<SignUp handleSignUpOrLogin={handleSignUpOrLogin} />}/>
         <Route path="login" element={<Login handleSignUpOrLogin={handleSignUpOrLogin} />}/>
+        <Route path="dashboard" element={<Dashboard />}/>
       </Route>
     </Routes>
   );

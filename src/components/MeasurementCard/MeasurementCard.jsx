@@ -1,5 +1,5 @@
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import Stack from 'react-bootstrap/Stack'
+// import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+// import Stack from 'react-bootstrap/Stack'
 
 export default function MeasurementCard (){
 

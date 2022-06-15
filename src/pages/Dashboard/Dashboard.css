@@ -1,0 +1,29 @@
+* {
+    margin: 0; 
+    padding: 0;
+    border: 0;
+    top: 0;
+}
+
+.dashboard-container {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+    "aside main";
+    margin: 0;
+}
+
+#dashboard-aside {
+    background-color: red;
+    grid-area: aside;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#dashboard-main {
+    background-color: blue;
+    grid-area: main;
+    height: 100vh;
+}

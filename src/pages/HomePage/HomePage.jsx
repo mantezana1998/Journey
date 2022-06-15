@@ -5,7 +5,6 @@ import './HomePage.css';
 export default function HomePage(){
     return(
     <>
-        <main>
             <Container fluid id="header">
                 <Row>
                     <Col>
@@ -43,7 +42,6 @@ export default function HomePage(){
                     </Tab>
                 </Tabs>
             </div>
-        </main>
     </>    
     )
 }

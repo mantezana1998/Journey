@@ -13,7 +13,7 @@ import Dashboard from '../src/pages/Dashboard/Dashboard';
 
 export default function App() {
 
-  const [setUser] = useState(userService.getUser());
+  const [user ,setUser] = useState(userService.getUser());
 
   function handleSignUpOrLogin(){
     setUser(userService.getUser());

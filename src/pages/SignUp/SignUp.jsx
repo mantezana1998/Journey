@@ -25,19 +25,21 @@ export default function SignUp(props){
         const formData = new FormData();
         formData.append('photo', selectedFile);
         for(let key in signup){
-          formData.append(key, signup[key])
+            console.log(key, signup[key].photo)
+            formData.append(key, signup[key])
         }
         try {
-          await userService.signup(formData);
-          props.handleSignUpOrLogin()
-          navigate('/dashboard')
+            await userService.signup(formData);
+            props.handleSignUpOrLogin()
+            navigate('/dashboard')
         }catch(err){
-          console.log(err.message)
-          setError(err.message)
+            console.log(err.message)
+            setError(err.message)
         }
     }
 
     function handleFileInput(e){
+        console.log(e.target.files)
         setSelectedFile(e.target.files[0])
     }
 

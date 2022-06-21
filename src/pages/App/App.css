@@ -1,0 +1,20 @@
+:root {
+    --white: #FFFFFF;
+    --gray: #EFF0F4;
+    --baby-blue: #74DBEF;
+    --blue: #0074E4;
+    --dark-blue: #264E86;
+}
+
+/* How to use :root in your code!
+
+A fun and easier way to read code 
+so you don't have to keep finding the long hashtag code like
+#0074E4
+
+.some-class{
+    background-color: var(--white);
+    color: var(--baby-blue);
+} */
+
+/* Start incorporating this into your code and edit your old CSS code */

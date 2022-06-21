@@ -9,21 +9,31 @@
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
     grid-template-areas: 
     "aside main";
     margin: 0;
 }
 
 #dashboard-aside {
-    background-color: red;
+    background-color: var(--baby-blue);
     grid-area: aside;
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#users-account-picture {
+    width: 70%;
+    height: 70%;
+    clip-path: circle();
+    display: block;
+    margin: -60% auto 0 auto;
 }
 
 #dashboard-main {
-    background-color: blue;
+    background-color: var(--white);
     grid-area: main;
     height: 100vh;
 }

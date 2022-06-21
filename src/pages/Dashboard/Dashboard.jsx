@@ -1,11 +1,15 @@
 import './Dashboard.css';
 
-export default function Dashboard(){
+export default function Dashboard(props){
     return(
         <>
             <div className="dashboard-container">
                 <aside id="dashboard-aside">
-                    <h1>Aside</h1>
+                    <img 
+                        src={props.user.photoUrl} 
+                        alt="user's photo" 
+                        id='users-account-picture'
+                        />
                     <ul id="dashboard-options-list">
                         <li><a href="">Dashboard</a></li>
                         <li><a href="">Start Session</a></li>

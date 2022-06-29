@@ -10,6 +10,8 @@ import Login from '../Login/Login';
 import userService from '../../utils/userService';
 import { useState } from 'react';
 import Dashboard from '../Dashboard/Dashboard';
+import DashboardLayout from '../DashboardLayout/DashboardLayout';
+import Behaviors from '../Behaviors/Behaviors'
 
 export default function App() {
 
@@ -20,6 +22,7 @@ export default function App() {
   }
 
   return (
+    <>
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />}/>
@@ -28,8 +31,12 @@ export default function App() {
         <Route path="measurements" element={<Measurements />}/>
         <Route path="signup" element={<SignUp handleSignUpOrLogin={handleSignUpOrLogin} />}/>
         <Route path="login" element={<Login handleSignUpOrLogin={handleSignUpOrLogin} />}/>
-        <Route path="dashboard" element={<Dashboard user={user} />}/>
+        <Route path='dashboard' element={<DashboardLayout user={user} />}>
+          <Route index element={<Dashboard />}/>
+          <Route path='behaviors' element={<Behaviors />}/>
+        </Route>
       </Route>
     </Routes>
+    </>
   );
 }

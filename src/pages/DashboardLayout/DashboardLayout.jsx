@@ -11,9 +11,9 @@ export default function DashboardLayout (props){
                     id='users-account-picture'
                     />
                 <ul id="dashboard-options-list">
-                    <li><a href="">Dashboard</a></li>
+                    <li><a href="/dashboard">Dashboard</a></li>
                     <li><a href="">Start Session</a></li>
-                    <li><a href="">Behaviors</a></li>
+                    <li><a href="/dashboard/behaviors">Behaviors</a></li>
                     <li><a href="">Progress</a></li>
                 </ul>
             </aside>

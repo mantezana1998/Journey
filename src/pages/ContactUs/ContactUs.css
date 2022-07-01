@@ -1,7 +1,81 @@
-.contact-info {
-    margin: 15%;
+.contact-form {
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.contact-forms {
-    margin: 15%;
+.contact-card {
+    width: 25rem;
+	border-radius: 1.5rem;
+    padding: 3rem 4rem 3rem 2rem;
+}
+
+.contact-p {
+    font-size: 25px;
+}
+
+.contact-form-card {
+    background-color: var(--baby-blue);
+	width: 25rem;
+    height: 105vh;
+	border-radius: 1.5rem;
+    padding: 2rem 4rem 3rem 2rem;
+}
+
+.contact-form-p {
+    display:block;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: .8rem 0;
+}
+
+.contact-form-input-box {
+    color: var(--black);
+	width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1.5px solid #ccc;
+    margin-bottom: 1rem;
+    border-radius: 0.3rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+  outline:none;
+}
+
+.button {
+    background: linear-gradient(
+135deg
+, var(--black) 0%, var(--blue) 100%);
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    width:100%;
+    letter-spacing: .11rem;
+    outline:none;
+}
+
+.button:hover {
+	transform: scale(1.05) translateY(-3px);
+    box-shadow: 3px 3px 6px #38373785;
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact-form{
+        flex-direction: column;
+        width: auto;
+      
+    }
+
+    .contact-form-card{
+        width:auto;
+        border-bottom-left-radius: 1.5rem;
+        padding:0.5rem 3rem 3rem 2rem;
+      border-radius:0;
+    }
 }

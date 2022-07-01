@@ -1,42 +1,17 @@
-.behavior-form-card {
-	width: 60rem;
-    margin: auto;
-    background: var(--white);
-    position:center;
-    align-self: center;
-    border-radius: 1.5rem;
-    box-shadow: 42px --var(--black);
+.behavior-form {
     display: flex;
-    flex-direction: row;
-    
-}
-
-/* .leftside {
-	background: #030303;
-	width: 25rem;
-	display: inline-flex;
-    align-items: center;
     justify-content: center;
-	border-top-left-radius: 1.5rem;
-    border-bottom-left-radius: 1.5rem;
-} */
-
-.product {
-    object-fit: cover;
-	width: 20em;
-    height: 20em;
-    border-radius: 100%;
+    align-items: center;
 }
 
-.right-side {
-    background-color: var(--white);
+.behavior-form-card {
+    background-color: var(--baby-blue);
 	width: 35rem;
-	border-bottom-right-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
-    padding: 1rem 2rem 3rem 3rem;
+	border-radius: 1.5rem;
+    padding: 3rem 4rem 3rem 2rem;
 }
 
-p{
+.behavior-form-p {
     display:block;
     font-size: 1.1rem;
     font-weight: 400;
@@ -73,7 +48,7 @@ p{
 .button {
     background: linear-gradient(
 135deg
-, var(--baby-blue) 0%, var(--dark-blue) 100%);
+, var(--black) 0%, var(--blue) 100%);
     padding: 15px;
     border: none;
     border-radius: 50px;
@@ -92,21 +67,13 @@ p{
 }
 
 @media only screen and (max-width: 1000px) {
-    .behavior-form-card{
+    .behavior-form{
         flex-direction: column;
         width: auto;
       
     }
 
-    .leftside{
-        width: 100%;
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 0;
-      border-top-right-radius:0;
-      border-radius:0;
-    }
-
-    .right-side{
+    .behavior-form-card{
         width:auto;
         border-bottom-left-radius: 1.5rem;
         padding:0.5rem 3rem 3rem 2rem;

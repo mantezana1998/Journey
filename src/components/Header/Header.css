@@ -2,7 +2,26 @@
     margin: 0;
 }
 
-ul{
+.navbar{
+    background-color: #0074E4;
+    display: flex;
+    justify-content: space-between;  
+    
+}
+
+.navbar-items, .navbar-right{
+    display: flex;
+    justify-content: flex-start;  
+    align-items: center;
+}
+
+.navbar-items a, .navbar-right a{
+    color: white;
+    padding: 0 12px;
+}
+
+
+ /* ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -21,5 +40,5 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
+} */
 

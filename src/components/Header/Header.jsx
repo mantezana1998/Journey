@@ -42,7 +42,7 @@ export default function Header (){
                     <a href="/aboutus">About Us</a>
                 </li>
                 <li>
-                    <a href="/measurements">Recordings</a>
+                    <a href="/recordings">Recordings</a>
                 </li>
                 <li>
                     <a href="/contactus">Contact Us</a>

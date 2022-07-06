@@ -1,5 +1,4 @@
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import Stack from 'react-bootstrap/Stack'
+
 
 export default function MeasurementCard (){
 
@@ -27,7 +26,20 @@ export default function MeasurementCard (){
 
     return (
     <>
-        <Stack>
+        <div className="card">
+                {measurements.map((measurement) => (
+                <>
+                    <h3>{measurement.measurementName}</h3>
+                    <h4>Special title treatment</h4>
+                    <img src=""></img>
+                    <p>With supporting text below as a natural lead-in to additional content.</p>
+                    <h6 className="text-muted">2 days ago</h6>
+                </>
+                ))}
+        </div>
+    
+        
+        {/* <Stack>
             <br />
             <Card className="text-left">
                 {measurements.map((measurement) => (
@@ -45,7 +57,7 @@ export default function MeasurementCard (){
                 ))}
             </Card>
             <br />
-        </Stack>
+        </Stack> */}
     </>
     )
 }

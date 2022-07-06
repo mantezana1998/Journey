@@ -1,7 +1,7 @@
 import './App.css';
 import { Routes, Route } from "react-router-dom";
 import HomePage from '../HomePage/HomePage';
-import Measurements from '../Measurements/Measurements';
+import Recordings from '../Recordings/Recordings';
 import Layout from '../Layout/Layout';
 import AboutUs from '../AboutUs/AboutUs';
 import ContactUs from '../ContactUs/ContactUs';
@@ -28,7 +28,7 @@ export default function App() {
         <Route index element={<HomePage />}/>
         <Route path='aboutus' element={<AboutUs />}/>
         <Route path="contactus" element={<ContactUs />}/>
-        <Route path="measurements" element={<Measurements />}/>
+        <Route path="recordings" element={<Recordings />}/>
         <Route path="signup" element={<SignUp handleSignUpOrLogin={handleSignUpOrLogin} />}/>
         <Route path="login" element={<Login handleSignUpOrLogin={handleSignUpOrLogin} />}/>
         <Route path='dashboard' element={<DashboardLayout user={user} />}>

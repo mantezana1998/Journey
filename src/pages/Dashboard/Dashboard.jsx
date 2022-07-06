@@ -1,6 +1,7 @@
 import './Dashboard.css';
 
-export default function Dashboard(props){
+export default function Dashboard(){
+
     return(
         <>
             <h1>Welcome to the start of your Journey!</h1>

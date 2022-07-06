@@ -1,6 +1,6 @@
 import './BehaviorForm.css';
 
-export default function BehaviorForm(){
+export default function BehaviorForm(props){
     return (
         <>
             <div className="behavior-form">

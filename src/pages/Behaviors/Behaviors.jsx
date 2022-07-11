@@ -1,8 +1,12 @@
+import './Behaviors.css';
 import BehaviorForm from '../../components/BehaviorForm/BehaviorForm';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import * as behaviorApi from '../../utils/behaviorApi';
+import { useNavigate } from 'react-router-dom';
 
-export default function Behaviors(){
+export default function Dashboard(){
+
+    const navigate = useNavigate();
     
     const [behavior, setBehavior] = useState([]);
     const [error, setError] = useState('');
@@ -14,6 +18,8 @@ export default function Behaviors(){
                 data.behavior,
                 ...behavior
             ])
+            navigate('/dashboard')
+            console.log(data, 'This is the new behavior!')
         }catch(err){
             setError(err.message)
         }

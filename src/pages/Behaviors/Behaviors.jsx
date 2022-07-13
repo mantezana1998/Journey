@@ -3,7 +3,6 @@ import BehaviorForm from '../../components/BehaviorForm/BehaviorForm';
 import { useState, useEffect } from 'react';
 import { createBehavior } from '../../utils/behaviorApi';
 import { useNavigate } from 'react-router-dom';
-import BehaviorList from '../../components/BehaviorsList/BehaviorsList';
 
 export default function Dashboard(){
 

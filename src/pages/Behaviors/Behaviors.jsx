@@ -1,8 +1,9 @@
 import './Behaviors.css';
 import BehaviorForm from '../../components/BehaviorForm/BehaviorForm';
 import { useState, useEffect } from 'react';
-import * as behaviorApi from '../../utils/behaviorApi';
+import { createBehavior } from '../../utils/behaviorApi';
 import { useNavigate } from 'react-router-dom';
+import BehaviorList from '../../components/BehaviorsList/BehaviorsList';
 
 export default function Dashboard(){
 
@@ -13,7 +14,7 @@ export default function Dashboard(){
 
     async function handleAddBehavior (behavior){
         try{
-            const data = await behaviorApi.createBehavior(behavior);
+            const data = await createBehavior(behavior);
             setBehavior([
                 data.behavior,
                 ...behavior
@@ -24,19 +25,6 @@ export default function Dashboard(){
             setError(err.message)
         }
     }
-
-    async function getAllBehaviors(){
-        try {
-            const data = await behaviorApi.getAllBehaviors();
-            setBehavior([...data.behavior])
-        }catch(err){
-            setError(err.message);
-        }
-    }
-
-    useEffect(() => {
-        getAllBehaviors();
-    }, []);
 
     return (
         <>

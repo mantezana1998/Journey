@@ -11,7 +11,7 @@ export default function Header (){
         <div className="nav-iten"><a href="/contactus">Contact Us</a></div>
       </div>
       <div className='navbar-right'>
-        <div className="nav-item"><a class="active" href="/signup">Start Journey</a></div>
+        <div className="nav-item"><a className="active" href="/signup">Start Journey</a></div>
       </div>
     </section> 
   )

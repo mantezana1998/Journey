@@ -8,23 +8,22 @@ export default function Dashboard(){
     const [behaviors, setBehaviors] = useState([]);
     const [error, setError] = useState('');
 
-    useEffect(() => {
-        showBehaviors();
-    }, [])
-
-    async function showBehaviors(){
-        try{
+    async function showAllBehaviors(){
+        try {
             const data = await getAllBehaviors();
-            setBehaviors(data);
+            setBehaviors([...data.behavior])
         }catch(err){
-            setError(err.message)
+            setError(err.message);
         }
     }
-    
-    const mapDis = behaviors.map((b) => {
-        return (
-            <h1>{b}</h1>
-        )
-    })
-    return <h1>{mapDis}</h1>
+
+    useEffect(() => {
+        showAllBehaviors();
+    }, []);
+
+    console.log(behaviors, 'behaviors!!!!!')
+
+    return (
+        <BehaviorsList behaviors={behaviors}/>
+    )
 }

@@ -1,6 +1,6 @@
 import tokenService from './tokenService';
 
-const BASE_URL = '/api/behavior';
+const BASE_URL = '/api/dashboard/behavior';
 
 export function createBehavior(behavior){
     return fetch(BASE_URL, {
@@ -18,5 +18,8 @@ export function getAllBehaviors(){
         headers: {
             'Authorization': 'Bearer ' + tokenService.getToken()
         }
-    }).then(res => res.json());
+    }).then(res => {
+        if (res.ok) return res.json();
+        throw new Error('Bad Credentials')
+    });
 }

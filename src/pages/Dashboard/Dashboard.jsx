@@ -1,10 +1,13 @@
 import './Dashboard.css';
 import { useEffect, useState } from 'react';
 import { getAllBehaviors } from '../../utils/behaviorApi';
-import BehaviorsList from '../../components/BehaviorsList/BehaviorsList'
+import BehaviorsList from '../../components/BehaviorsList/BehaviorsList';
+import { createBehavior } from '../../utils/behaviorApi';
+import { useNavigate } from 'react-router-dom';
 
-export default function Dashboard(){
+export default function Dashboard({user}){
 
+    const navigate = useNavigate();
     const [behaviors, setBehaviors] = useState([]);
     const [error, setError] = useState('');
 
@@ -25,7 +28,7 @@ export default function Dashboard(){
             console.log(err, "dashboard page")
         }
     }
-
+    
     return (
         <BehaviorsList />
     )

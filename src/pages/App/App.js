@@ -32,7 +32,7 @@ export default function App() {
         <Route path="signup" element={<SignUp handleSignUpOrLogin={handleSignUpOrLogin} />}/>
         <Route path="login" element={<Login handleSignUpOrLogin={handleSignUpOrLogin} />}/>
         <Route path='dashboard' element={<DashboardLayout user={user} />}>
-          <Route index element={<Dashboard />}/>
+          <Route index element={<Dashboard user={user} />}/>
           <Route path='behaviors' element={<Behaviors />}/>
         </Route>
       </Route>

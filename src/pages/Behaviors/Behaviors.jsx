@@ -1,15 +1,14 @@
 import './Behaviors.css';
 import BehaviorForm from '../../components/BehaviorForm/BehaviorForm';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { createBehavior } from '../../utils/behaviorApi';
 import { useNavigate } from 'react-router-dom';
-import BehaviorList from '../../components/BehaviorsList/BehaviorsList';
 
 export default function Dashboard(){
 
     const navigate = useNavigate();
     
-    const [behavior, setBehavior] = useState([]);
+    const [behaviorList, setBehavior] = useState([]);
     const [error, setError] = useState('');
 
     async function handleAddBehavior (behavior){
@@ -17,10 +16,9 @@ export default function Dashboard(){
             const data = await createBehavior(behavior);
             setBehavior([
                 data.behavior,
-                ...behavior
+                ...behaviorList
             ])
             navigate('/dashboard')
-            console.log(data, 'This is the new behavior!')
         }catch(err){
             setError(err.message)
         }

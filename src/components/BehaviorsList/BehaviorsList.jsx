@@ -1,9 +1,14 @@
-export default function BehaviorsList({behaviors}){
+import { useState } from 'react';
+
+export default function BehaviorsList(){
+
     
-    const mapBehaviors = behaviors.map((b) => {
-        return (
-            <h1>{b}</h1>
-        )
-    })
-    return mapBehaviors
+    const [behavior, setBehaviors] = useState([])
+
+    // const list = behaviors.map((b) => {
+    //     return (
+    //       <h1>{b}</h1>
+    //     );
+    //   });
+    //   return <div>{list}</div>;
 }

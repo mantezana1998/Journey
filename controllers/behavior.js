@@ -2,6 +2,7 @@ const Behavior = require("../models/behavior");
 
 module.exports = {
   createBehavior,
+  index
 };
 
 async function createBehavior(req, res) {
@@ -18,5 +19,14 @@ async function createBehavior(req, res) {
   }catch(err){
     res.status(400).json({ err })
     console.log(err)
+  }
+}
+
+async function index(req, res){
+  try{
+    const behaviorsList = await Behavior.find({}).populate('user').exec()
+    res.status(200).json({ behaviorsList: behaviorsList })
+  }catch(err){
+    res.status(400).json({ err })
   }
 }

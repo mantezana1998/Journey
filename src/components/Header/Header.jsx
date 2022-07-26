@@ -11,7 +11,6 @@ export default function Header (){
                   <div className="nav-item"><a href="/aboutus">About Us</a></div>
                   <div className="nav-item"><a href="/recordings">Recordings</a></div>
                   <div className="nav-iten"><a href="/contactus">Contact Us</a></div>
-
           </div>
           <div className='navbar-right'>
                   <div className="nav-item"><a class="active" href="/signup">Start Journey</a></div>

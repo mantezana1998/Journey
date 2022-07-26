@@ -5,25 +5,40 @@
 .navbar{
     background-color: #0074E4;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;  
     
 }
 
-.navbar-right, .navbar-items {
+.navbar-items, .navbar-right{
     display: flex;
-    justify-content: flex-start; 
-    align-items: center; 
+    justify-content: flex-start;  
+    align-items: center;
 }
-
 
 .navbar-items a, .navbar-right a{
     color: white;
     padding: 0 12px;
 }
 
-@media screen and (max-width: 600px) {
-    .navbar-items {
-      display: block;
-      width: 100%;
-    }
-  }
+
+ /* ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0074E4;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+   font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+} */
+

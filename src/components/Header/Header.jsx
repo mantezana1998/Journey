@@ -1,8 +1,6 @@
-import { MDBBtn } from 'mdb-react-ui-kit';
 import './Header.css';
 
 export default function Header (){
-
     
     return (
       <section className="navbar">

@@ -36,9 +36,19 @@
    <a href="mailto:ballerini.steven@gmail.com" target="_blank">
       <img src="https://img.shields.io/badge/-ballerini.steven@gmail.com-c14438?style=flat&logo=Gmail&``logoColor=white">
    </a>
+
    <h5>Costas Ford</h5>
 
-   <div>Coming soon to a node near you!</div>
+   <a href="https://github.com/costasford" target="_blank">
+      <img src="https://img.shields.io/badge/-Portfolio:_costasford.github.io-darkgreen?style=flat&logo=medium"/>
+   </a>
+   <a href="https://www.linkedin.com/in/costasford/" target="_blank">
+      <img src="https://img.shields.io/badge/-linkedin.com/in/costasford-blue?style=flat&``logo=Linkedin&logoColor=white">
+   </a> 
+   <a href="mailto:costasford@gmail.com" target="_blank">
+      <img src="https://img.shields.io/badge/-costasford@gmail.com-c14438?style=flat&logo=Gmail&``logoColor=white">
+   </a>
+
 </div>
    
 <h1>:pencil: Description</h1>

@@ -15,7 +15,6 @@ async function createBehavior(req, res) {
       goalDate: req.body.goalDate,
       user: req.user,
     });
-    console.log(behavior, 'hahahahahahahahahhahaha')
     res.status(201).json({ behaviors: behavior });
   }catch(err){
     res.status(400).json({ err })

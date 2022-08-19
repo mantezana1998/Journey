@@ -1,4 +1,4 @@
-export default function BehaviorsList(){
+export default function BehaviorsList(g){
 
     // const list = behaviors.map((b) => {
     //     return (

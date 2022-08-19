@@ -7,6 +7,7 @@ module.exports = {
 
 async function createBehavior(req, res) {
   try{
+    console.log(req.file, req.body, 'this is create method', req.user)
     const behavior = await Behavior.create({
       behaviorName: req.body.behaviorName,
       recording: req.body.recording,
@@ -14,8 +15,8 @@ async function createBehavior(req, res) {
       goalDate: req.body.goalDate,
       user: req.user,
     });
-
-    res.status(201).json({ behavior: behavior });
+    console.log(behavior, 'hahahahahahahahahhahaha')
+    res.status(201).json({ behaviors: behavior });
   }catch(err){
     res.status(400).json({ err })
     console.log(err)

@@ -35,6 +35,7 @@ export default function BehaviorForm({handleAddBehavior}){
         e.preventDefault();
         const formData = new FormData();
         handleAddBehavior(formData)
+        console.log("Submitted!")
     }
 
     return (

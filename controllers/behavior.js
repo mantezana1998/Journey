@@ -7,7 +7,7 @@ module.exports = {
 
 async function createBehavior(req, res) {
   try{
-    const behavior = new Behavior({
+    const behavior = await Behavior.create({
       behaviorName: req.body.behaviorName,
       recording: req.body.recording,
       startDate: req.body.startDate,

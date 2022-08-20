@@ -34,8 +34,11 @@ export default function BehaviorForm({handleAddBehavior}){
     function handleSubmit(e){
         e.preventDefault();
         const formData = new FormData();
+        formData.append('nameOfBehavior', behavior.nameOfBehavior);
+        formData.append('recording', behavior.recording);
+        formData.append('startDate', behavior.startDate);
+        formData.append('goalDate', behavior.goalDate);
         handleAddBehavior(formData)
-        console.log("Submitted!")
     }
 
     return (

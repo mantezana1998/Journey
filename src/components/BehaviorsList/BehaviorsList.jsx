@@ -1,12 +1,18 @@
-export default function BehaviorsList(g){
-
-    // const list = behaviors.map((b) => {
-    //     return (
-    //       <h1>{b.behaviorName}</h1>
-    //     );
-    // });
+export default function BehaviorsList({behaviors}){
 
     return (
-        <h1>Hello</h1>
-    )
+        <div>
+          {/* 👇️ iterate object KEYS */}
+          {Object.keys(behaviors).map((key, index) => {
+            return (
+              <div key={index}>
+                <h2>
+                  {key}: {behaviors[key]}
+                </h2>
+                <hr />
+              </div>
+            );
+          })}
+        </div>
+      );
 }

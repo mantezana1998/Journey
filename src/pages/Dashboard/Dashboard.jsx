@@ -14,6 +14,7 @@ export default function Dashboard(){
         try {
             const data = await getAllBehaviors();
             setBehaviors([data.behaviors])
+            console.log(data)
         }catch(err){
             setError(err.message);
             console.log(err, "dashboard page")
@@ -21,16 +22,16 @@ export default function Dashboard(){
     }
 
     useEffect(() => {
-        let isMounted = true;
-        showAllBehaviors().then(data => {
-            if(isMounted) setBehaviors(data);
-        })
-        return () => { isMounted = false }
-        // showAllBehaviors();
+        // let isMounted = true;
+        // showAllBehaviors().then(data => {
+        //     if(isMounted) setBehaviors(data);
+        // })
+        // return () => { isMounted = false }
+        showAllBehaviors();
     }, []);
 
     
     return (
-        <BehaviorsList />
+        <BehaviorsList behaviors={behaviors}/>
     )
 }

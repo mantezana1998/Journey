@@ -1,10 +1,10 @@
 import './BehaviorForm.css';
 import { useState } from 'react';
 
-export default function BehaviorForm({handleAddBehavior}){
+export default function BehaviorForm({ handleAddBehavior }){
 
     const [behavior, setBehavior] = useState({
-        nameOfBehavior: '',
+        behaviorName: '',
         recording: '',
         startDate: '',
         goalDate: ''
@@ -34,7 +34,7 @@ export default function BehaviorForm({handleAddBehavior}){
     function handleSubmit(e){
         e.preventDefault();
         const formData = new FormData();
-        formData.append('nameOfBehavior', behavior.nameOfBehavior);
+        formData.append('behaviorName', behavior.behaviorName);
         formData.append('recording', behavior.recording);
         formData.append('startDate', behavior.startDate);
         formData.append('goalDate', behavior.goalDate);
@@ -51,10 +51,10 @@ export default function BehaviorForm({handleAddBehavior}){
                         <input 
                             type="text" 
                             className="behavior-form-input-box" 
-                            name="nameOfBehavior" 
+                            name="behaviorName" 
                             placeholder="Ex. Eloping, Cleaning, Washing Hands" 
                             onChange={handleChange}
-                            value={behavior.nameOfBehavior}
+                            value={behavior.behaviorName}
                             required 
                         />
                         <p className="behavior-form-p">Recording</p>

@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { getAllBehaviors } from '../../utils/behaviorApi';
 import BehaviorsList from '../../components/BehaviorsList/BehaviorsList';
 
-export default function Dashboard(){
+export default function Dashboard({user}){
 
     const [behaviors, setBehaviors] = useState([]);
     const [error, setError] = useState('');
@@ -12,7 +12,8 @@ export default function Dashboard(){
         try {
             const data = await getAllBehaviors();
             setBehaviors({...data.behaviors})
-            console.log(data)
+
+
         }catch(err){
             setError(err.message);
             console.log(err, "dashboard page")
@@ -24,6 +25,6 @@ export default function Dashboard(){
     }, []);
 
     return (
-        <BehaviorsList behaviors={behaviors}/>
+        <BehaviorsList behaviors={behaviors} user={user} />
     )
 }

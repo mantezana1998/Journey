@@ -2,9 +2,9 @@ export default function BehaviorsList({behaviors}){
 
   return (
   <ul>
-    {Object.keys(behaviors).map(function(keyName, keyIndex) {
+    {Object.values(behaviors).map(function(keyName, keyIndex) {
       return (
-        <li key={keyName}>
+        <li key={keyIndex}>
           {keyName.behaviorName}
         </li>
       )

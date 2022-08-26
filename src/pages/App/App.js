@@ -12,6 +12,7 @@ import { useState } from 'react';
 import Dashboard from '../Dashboard/Dashboard';
 import DashboardLayout from '../DashboardLayout/DashboardLayout';
 import Behaviors from '../Behaviors/Behaviors'
+import Graph from '../Graph/Graph';
 
 export default function App() {
 
@@ -34,6 +35,7 @@ export default function App() {
         <Route path='dashboard' element={<DashboardLayout user={user} />}>
           <Route index element={<Dashboard user={user} />}/>
           <Route path='behaviors' element={<Behaviors />}/>
+          <Route path=':id' element={<Graph />}/>
         </Route>
       </Route>
     </Routes>

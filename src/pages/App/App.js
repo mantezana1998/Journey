@@ -8,19 +8,36 @@ import ContactUs from '../ContactUs/ContactUs';
 import SignUp from '../SignUp/SignUp';
 import Login from '../Login/Login';
 import userService from '../../utils/userService';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Dashboard from '../Dashboard/Dashboard';
 import DashboardLayout from '../DashboardLayout/DashboardLayout';
 import Behaviors from '../Behaviors/Behaviors'
 import Graph from '../Graph/Graph';
+import { getAllBehaviors } from '../../utils/behaviorApi';
 
 export default function App() {
 
   const [user, setUser] = useState(userService.getUser());
+  const [behaviors, setBehaviors] = useState([]);
+  const [error, setError] = useState('');
 
   function handleSignUpOrLogin(){
     setUser(userService.getUser());
   }
+
+  async function showAllBehaviors(){
+    try {
+      const data = await getAllBehaviors();
+      setBehaviors({...data.behaviors})
+    }catch(err){
+      setError(err.message);
+      console.log(err, "dashboard page")
+    }
+}
+
+  useEffect(() => {
+    showAllBehaviors();
+  }, []);
 
   return (
     <>
@@ -33,9 +50,9 @@ export default function App() {
         <Route path="signup" element={<SignUp handleSignUpOrLogin={handleSignUpOrLogin} />}/>
         <Route path="login" element={<Login handleSignUpOrLogin={handleSignUpOrLogin} />}/>
         <Route path='dashboard' element={<DashboardLayout user={user} />}>
-          <Route index element={<Dashboard user={user} />}/>
+          <Route index element={<Dashboard user={user} behaviors={behaviors} />}/>
           <Route path='behaviorform' element={<Behaviors />}/>
-          <Route path='behavior/yeth' element={<Graph />}/>
+          <Route path='behavior/:id' element={<Graph behaviors={behaviors} />}/>
         </Route>
       </Route>
     </Routes>

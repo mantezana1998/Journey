@@ -1,5 +1,8 @@
-export default function Graph(){
+export default function Graph({behaviors}){
     return (
-        <h1>Graph Page</h1>
+        <>
+            <h1>Graph Page</h1>
+            <p>{behaviors.behaviorName}</p>
+        </>
     )
 }

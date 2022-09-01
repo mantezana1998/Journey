@@ -34,8 +34,8 @@ export default function App() {
         <Route path="login" element={<Login handleSignUpOrLogin={handleSignUpOrLogin} />}/>
         <Route path='dashboard' element={<DashboardLayout user={user} />}>
           <Route index element={<Dashboard user={user} />}/>
-          <Route path='behaviors' element={<Behaviors />}/>
-          <Route path=':id' element={<Graph />}/>
+          <Route path='behaviorform' element={<Behaviors />}/>
+          <Route path='behavior/yeth' element={<Graph />}/>
         </Route>
       </Route>
     </Routes>

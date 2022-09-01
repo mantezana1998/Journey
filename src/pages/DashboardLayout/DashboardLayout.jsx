@@ -13,7 +13,7 @@ export default function DashboardLayout (props){
                 <ul id="dashboard-options-list">
                     <li><a href="/dashboard">Dashboard</a></li>
                     <li><a href="">Start Session</a></li>
-                    <li><a href="/dashboard/behaviors">Behaviors</a></li>
+                    <li><a href="/dashboard/behaviorform">Behaviors</a></li>
                     <li><a href="">Progress</a></li>
                 </ul>
             </aside>

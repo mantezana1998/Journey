@@ -1,9 +1,14 @@
-const Graph = require("../models/graph");
+const Behavior = require("../models/behavior");
 
 module.exports = {
     showGraph
-}
+};
 
 async function showGraph(req, res){
-    res.render("<h1>Hello</h1>")
+    try{
+        const showBehaviorId = await Behavior.findOne({ _id: req.params.id }).populate('user').exec()
+        res.status(200).json({ showBehaviorId: showBehaviorId })
+      }catch(err){
+        res.status(400).json({ err })
+    }
 }

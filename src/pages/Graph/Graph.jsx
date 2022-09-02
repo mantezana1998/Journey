@@ -1,5 +1,4 @@
 import {useParams} from 'react-router-dom';
-import { ListList } from 'semantic-ui-react';
 
 export default function Graph({behaviors}){
 
@@ -9,7 +8,8 @@ export default function Graph({behaviors}){
         <>
             <h1>Graph Page</h1>
             <ul>
-                {Object.values(behaviors).filter((list) => list._id === id)
+                {Object.values(behaviors)
+                .filter((list) => list._id === id)
                 .map((list, index) => {
                     return (
                         <>

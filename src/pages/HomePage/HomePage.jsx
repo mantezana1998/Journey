@@ -1,6 +1,5 @@
 import { Container, Row, Col, Button, Tabs, Tab } from "react-bootstrap";
 import './HomePage.css';
-// import { BsFillHandIndexFill } from "react-icons/bs";
 
 export default function HomePage(){
     return(

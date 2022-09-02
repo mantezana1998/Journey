@@ -25,6 +25,11 @@ export default function App() {
     setUser(userService.getUser());
   }
 
+  function handleLogout(){
+    userService.logout()
+    setUser(null);
+  }
+
   async function showAllBehaviors(){
     try {
       const data = await getAllBehaviors();
@@ -39,8 +44,28 @@ export default function App() {
     showAllBehaviors();
   }, []);
 
+
+  if(user){
+    return (
+      <Routes>
+        <Route path="/" element={<Layout />} handleLogout={handleLogout} user={user}>
+          <Route index element={<HomePage />}/>
+          <Route path='aboutus' element={<AboutUs />}/>
+          <Route path="contactus" element={<ContactUs />}/>
+          <Route path="recordings" element={<Recordings />}/>
+          <Route path="signup" element={<SignUp handleSignUpOrLogin={handleSignUpOrLogin} />}/>
+          <Route path="login" element={<Login handleSignUpOrLogin={handleSignUpOrLogin} />}/>
+          <Route path='dashboard' element={<DashboardLayout user={user} />}>
+            <Route index element={<Dashboard behaviors={behaviors} />}/>
+            <Route path='behaviorform' element={<Behaviors />}/>
+            <Route path='behavior/:id' element={<Graph behaviors={behaviors} />}/>
+          </Route>
+        </Route>
+      </Routes>
+    )
+  }
+
   return (
-    <>
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />}/>
@@ -49,13 +74,7 @@ export default function App() {
         <Route path="recordings" element={<Recordings />}/>
         <Route path="signup" element={<SignUp handleSignUpOrLogin={handleSignUpOrLogin} />}/>
         <Route path="login" element={<Login handleSignUpOrLogin={handleSignUpOrLogin} />}/>
-        <Route path='dashboard' element={<DashboardLayout user={user} />}>
-          <Route index element={<Dashboard behaviors={behaviors} />}/>
-          <Route path='behaviorform' element={<Behaviors />}/>
-          <Route path='behavior/:id' element={<Graph behaviors={behaviors} />}/>
-        </Route>
       </Route>
     </Routes>
-    </>
   );
 }

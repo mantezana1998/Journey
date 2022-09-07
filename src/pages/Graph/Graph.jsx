@@ -1,4 +1,5 @@
-import {useParams} from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import Recording from '../../components/Recording/Recording';
 
 export default function Graph({behaviors}){
 
@@ -18,8 +19,10 @@ export default function Graph({behaviors}){
                             <h1>{list.startDate}</h1>
                             <h1>{list.goalDate}</h1> 
                         </>
-                    )})}
+                    )
+                })}
             </ul>
+            <Recording behavior={id}/>
         </>
     )
 }

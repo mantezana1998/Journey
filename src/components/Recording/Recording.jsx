@@ -1,12 +1,22 @@
 import { useState, useRef } from "react";
+import { createRecord } from "../../utils/recordApi";
 
-export default function Recording({behavior}){
+export default function Recording({id}){
 
     const [occurrences, setOccurrences] = useState(0);
     const [timer, setTimer] = useState(0);
     const [isActive, setIsActive] = useState(false);
     const [isPaused, setIsPaused] = useState(false);
+    const [error, setError] = useState('');
+    const [recordList, setRecordList] = useState([]);
     const countRef = useRef(null)
+    const [record, setRecord] = useState({
+        behavior: '',
+        typeOfBehavior: '', 
+        time: 0,
+        date: new Date(), 
+        occurrences: 0
+    })
 
     function increment(){
         setOccurrences(occurrences + 1)
@@ -50,7 +60,30 @@ export default function Recording({behavior}){
         const getHours = `0${Math.floor(timer / 3600)}`.slice(-2)
     
         return `${getHours} : ${getMinutes} : ${getSeconds}`
-      }
+    }
+
+    async function handleAddRecord(record){
+        try{
+            const data = await createRecord(record);
+            setRecordList([
+                data.record,
+                ...recordList
+            ]);
+        }catch(err){
+            setError(err.message)
+        }
+    }
+
+    function handleRecordSubmit(e){
+        e.preventDefault();
+        const formData = new FormData();
+        formData.append('behavior', record.behavior);
+        formData.append('typeOfBehavior', record.typeOfBehavior);
+        formData.append('time', record.time);
+        formData.append('date', record.date);
+        formData.append('occurrences', record.occurrences);
+        handleAddRecord(formData)
+    }
 
     return(
         <>
@@ -71,6 +104,7 @@ export default function Recording({behavior}){
                 )
             }
             <button onClick={resetTimer} disabled={!isActive}>Reset</button>
+            <button onClick={handleRecordSubmit}>Submit</button>
         </>
     )
 }

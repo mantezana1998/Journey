@@ -1,7 +1,9 @@
 const Behavior = require("../models/behavior");
+const Graph = require("../models/graph");
 
 module.exports = {
-    showGraph
+    showGraph,
+    createRecord
 };
 
 async function showGraph(req, res){
@@ -13,5 +15,21 @@ async function showGraph(req, res){
         })
       }catch(err){
         res.status(400).json({ err })
+    }
+}
+
+async function createRecord(req, res){
+    try{
+        const record = await Graph.create({
+            behavior: req.body.behavior,
+            typeOfBehavior: req.body.typeOfBehavior,
+            time: req.body.time,
+            occurrences: req.body.occurrences,
+            user: req.user
+        });
+        res.status(201).json({ record: record });
+    }catch(err){
+        res.status(400).json({err});
+        console.log(err)
     }
 }

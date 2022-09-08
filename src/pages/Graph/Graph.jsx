@@ -22,7 +22,7 @@ export default function Graph({behaviors}){
                     )
                 })}
             </ul>
-            <Recording behavior={id}/>
+            <Recording id={id}/>
         </>
     )
 }

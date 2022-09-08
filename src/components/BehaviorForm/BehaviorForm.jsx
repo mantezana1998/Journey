@@ -1,7 +1,7 @@
 import './BehaviorForm.css';
 import { useState } from 'react';
 
-export default function BehaviorForm({ handleAddBehavior }){
+export default function BehaviorForm({handleAddBehavior}){
 
     const [behavior, setBehavior] = useState({
         behaviorName: '',

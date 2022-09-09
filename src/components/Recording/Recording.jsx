@@ -9,10 +9,9 @@ export default function Recording({id}){
     const [isPaused, setIsPaused] = useState(false);
     const [error, setError] = useState('');
     const [recordList, setRecordList] = useState([]);
-    const countRef = useRef(null)
-    const [record, setRecord] = useState({
-        behavior: '',
-        typeOfBehavior: '', 
+    const countRef = useRef(null);
+    const [today, setToday] = useState('');
+    const [record, setRecord] = useState({ 
         time: 0,
         date: new Date(), 
         occurrences: 0
@@ -74,11 +73,28 @@ export default function Recording({id}){
         }
     }
 
+    function handleRecordTime(e){
+        const value = e.target.value;
+        setRecord({...record, time: value})
+    }
+
+    // function handleDate(){
+    //     let today = new Date();
+    //     let current = `
+    //         ${today.getHours()}:${today.getMinutes}:${today.getSeconds()} 
+    //         ${today.getMonth()}/${today.getDay}/${today.getFullYear}
+    //         `;
+    //     setToday(current);
+    // }
+
+    function handleRecordOccurrences(e){
+        const value = e.target.value;
+        setRecord({...record, occurrences: value})
+    }
+
     function handleRecordSubmit(e){
         e.preventDefault();
         const formData = new FormData();
-        formData.append('behavior', record.behavior);
-        formData.append('typeOfBehavior', record.typeOfBehavior);
         formData.append('time', record.time);
         formData.append('date', record.date);
         formData.append('occurrences', record.occurrences);
@@ -87,24 +103,44 @@ export default function Recording({id}){
 
     return(
         <>
-            <h1>Increment or Decrement Here</h1>
-            <button onClick={increment}>+</button>
-            <button onClick={decrement}>-</button>
-            <h3>{occurrences}</h3>
+            <form onSubmit={handleAddRecord}>
+                <h1>Increment or Decrement Here</h1>
+                <button onClick={increment}>+</button>
+                <button onClick={decrement}>-</button>
+                <input
+                    type='number'
+                    name='occurrences'
+                    placeholder='0'
+                    onChange={handleRecordOccurrences}
+                    value={record.occurrences}
+                    required
+                    >
+                    {occurrences}
+                </input>
 
-            <h1>Timer</h1>
-            <h3>{formatTime()}</h3>
-            {
-                !isActive && !isPaused ? 
-                <button onClick={startTimer}>Start</button> : 
-                (
-                    isPaused ? 
-                    <button onClick={stopTimer}>Pause</button> 
-                    : <button onClick={resumeTimer}>Resume</button>
-                )
-            }
-            <button onClick={resetTimer} disabled={!isActive}>Reset</button>
-            <button onClick={handleRecordSubmit}>Submit</button>
+                <h1>Timer</h1>
+                <input
+                    type='number'
+                    name='time'
+                    placeholder='00:00'
+                    onChange={handleRecordTime}
+                    value={record.time}
+                    required
+                    >
+                    {formatTime()}
+                </input>
+                {
+                    !isActive && !isPaused ? 
+                    <button onClick={startTimer}>Start</button> : 
+                    (
+                        isPaused ? 
+                        <button onClick={stopTimer}>Pause</button> 
+                        : <button onClick={resumeTimer}>Resume</button>
+                    )
+                }
+                <button onClick={resetTimer} disabled={!isActive}>Reset</button>
+                <button onClick={() => {handleRecordSubmit; handleDate;}}>Submit</button>
+            </form>
         </>
     )
 }

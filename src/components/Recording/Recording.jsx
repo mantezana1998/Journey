@@ -10,22 +10,24 @@ export default function Recording({id}){
     const [error, setError] = useState('');
     const [recordList, setRecordList] = useState([]);
     const countRef = useRef(null);
-    const [today, setToday] = useState('');
     const [record, setRecord] = useState({ 
-        time: 0,
+        time: '',
         date: new Date(), 
         occurrences: 0
     })
 
-    function increment(){
+    function increment(e){
+        e.preventDefault();
         setOccurrences(occurrences + 1)
     }
 
-    function decrement(){
+    function decrement(e){
+        e.preventDefault();
         setOccurrences(occurrences - 1)
     }
 
-    function startTimer(){
+    function startTimer(e){
+        e.preventDefault();
         setIsActive(true)
         setIsPaused(true)
         countRef.current = setInterval(() => {
@@ -33,19 +35,22 @@ export default function Recording({id}){
         }, 1000)
     }
 
-    function stopTimer(){
+    function stopTimer(e){
+        e.preventDefault();
         clearInterval(countRef.current)
         setIsPaused(false)
     }
 
-    function resumeTimer(){
+    function resumeTimer(e){
+        e.preventDefault();
         setIsPaused(true)
         countRef.current = setInterval(() => {
             setTimer((timer) => timer + 1)
         }, 1000)
     }
 
-    function resetTimer(){
+    function resetTimer(e){
+        e.preventDefault();
         clearInterval(countRef.current)
         setIsActive(false)
         setIsPaused(false)
@@ -73,23 +78,13 @@ export default function Recording({id}){
         }
     }
 
-    function handleRecordTime(e){
-        const value = e.target.value;
-        setRecord({...record, time: value})
-    }
-
-    // function handleDate(){
-    //     let today = new Date();
-    //     let current = `
-    //         ${today.getHours()}:${today.getMinutes}:${today.getSeconds()} 
-    //         ${today.getMonth()}/${today.getDay}/${today.getFullYear}
-    //         `;
-    //     setToday(current);
-    // }
-
-    function handleRecordOccurrences(e){
-        const value = e.target.value;
-        setRecord({...record, occurrences: value})
+    function handleDate(){
+        // let today = new Date();
+        // let current = `
+        //     ${today.getHours()}:${today.getMinutes}:${today.getSeconds()} 
+        //     ${today.getMonth()}/${today.getDay}/${today.getFullYear}
+        //     `;
+        // setToday(current);
     }
 
     function handleRecordSubmit(e){
@@ -107,28 +102,10 @@ export default function Recording({id}){
                 <h1>Increment or Decrement Here</h1>
                 <button onClick={increment}>+</button>
                 <button onClick={decrement}>-</button>
-                <input
-                    type='number'
-                    name='occurrences'
-                    placeholder='0'
-                    onChange={handleRecordOccurrences}
-                    value={record.occurrences}
-                    required
-                    >
-                    {occurrences}
-                </input>
+                <h3>{occurrences}</h3>
 
                 <h1>Timer</h1>
-                <input
-                    type='number'
-                    name='time'
-                    placeholder='00:00'
-                    onChange={handleRecordTime}
-                    value={record.time}
-                    required
-                    >
-                    {formatTime()}
-                </input>
+                <h3>{formatTime()}</h3>
                 {
                     !isActive && !isPaused ? 
                     <button onClick={startTimer}>Start</button> : 
@@ -139,7 +116,7 @@ export default function Recording({id}){
                     )
                 }
                 <button onClick={resetTimer} disabled={!isActive}>Reset</button>
-                <button onClick={() => {handleRecordSubmit; handleDate;}}>Submit</button>
+                <button onClick={() => {handleRecordSubmit(); handleDate();}}>Submit</button>
             </form>
         </>
     )

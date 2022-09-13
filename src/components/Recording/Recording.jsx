@@ -1,15 +1,15 @@
 import { useState, useRef } from "react";
+import { useNavigate } from 'react-router-dom';
 
-export default function Recording({id, handleAddRecord}){
-
+export default function Recording({handleAddRecord, id}){
+    
+    const navigate = useNavigate();
     const [occurrences, setOccurrences] = useState(0);
     const [time, setTime] = useState(0);
     const [isActive, setIsActive] = useState(false);
     const [isPaused, setIsPaused] = useState(false);
     const [error, setError] = useState('');
     const countRef = useRef(null);
-    // const [recordList, setRecordList] = useState([]);
-    // const [today, setToday] = useState('');
 
     function increment(e){
         e.preventDefault();
@@ -66,7 +66,10 @@ export default function Recording({id, handleAddRecord}){
         const formData = new FormData();
         formData.append('time', time);
         formData.append('occurrences', occurrences);
-        handleAddRecord(formData)
+        handleAddRecord(formData);
+        setOccurrences(0);
+        setTime(0);
+        navigate(`/dashboard/behavior/${id}/records`)
     }
 
     return(

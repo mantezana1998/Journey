@@ -7,10 +7,22 @@ export function createRecord(id){
         method: 'POST',
         body: id,
         headers: {
-            Authorization: 'Bearer ' + tokenService.getToken(),
+            'Authorization': 'Bearer ' + tokenService.getToken(),
         },
     }).then((res) => {
         if(res.ok) return res.json();
         throw new Error("Bad Credentials at record Api!")
+    })
+}
+
+export function showAllRecords(id){
+    return fetch(`${BASE_URL}/${id}/records`, {
+        method: 'GET',
+        headers: {
+            'Authorization': 'Bearer ' + tokenService.getToken()
+        }
+    }).then(res => {
+        if(res.ok) return res.json();
+        throw new Error('Bad Credentials at record Api!')
     })
 }

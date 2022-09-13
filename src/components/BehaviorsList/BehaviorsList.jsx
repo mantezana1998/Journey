@@ -7,11 +7,11 @@ export default function BehaviorsList({behaviors}){
       {Object.values(behaviors).map(function(keyName, keyIndex) {
         return (
           <li key={keyIndex}>
-              <Link to={{ pathname: `/dashboard/behavior/${keyName._id}` }}>
-                <button>
-                  {keyName.behaviorName}
-                </button>
-              </Link>
+            <Link to={{ pathname: `/dashboard/behavior/${keyName._id}` }}>
+              <button>
+                {keyName.behaviorName}
+              </button>
+            </Link>
           </li>
         )
       })}

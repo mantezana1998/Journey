@@ -5,7 +5,7 @@ const behaviorSchema = new mongoose.Schema({
     behaviorName: {type: String},
     recording: {type: String},
     startDate: {type: String},
-    goalDate: {type: String}
+    goalDate: {type: String},
 }, {
     timestamps: true
 })

@@ -21,8 +21,6 @@ async function showGraph(req, res){
 async function createRecord(req, res){
     try{
         const record = await Graph.create({
-            behavior: req.body.behavior,
-            typeOfBehavior: req.body.typeOfBehavior,
             time: req.body.time,
             occurrences: req.body.occurrences,
             user: req.user

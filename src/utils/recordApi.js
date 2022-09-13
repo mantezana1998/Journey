@@ -5,6 +5,7 @@ const BASE_URL = '/api/dashboard/behavior'
 export function createRecord(id){
     return fetch(`${BASE_URL}/${id}/createRecord`, {
         method: 'POST',
+        body: id,
         headers: {
             Authorization: 'Bearer ' + tokenService.getToken(),
         },

@@ -1,9 +1,25 @@
 import { useParams } from 'react-router-dom';
 import Recording from '../../components/Recording/Recording';
+import { createRecord } from "../../utils/recordApi";
+import {useState} from 'react';
 
 export default function Graph({behaviors}){
 
+    const [records, setRecordsList] = useState([]);
+    const [error, setError] = useState('');
     const { id } = useParams();
+
+    async function handleAddRecord(record){
+        try{
+            const data = await createRecord(record);
+            setRecordsList([
+                data.record,
+                ...setRecordsList
+            ]);
+        }catch(err){
+            setError(err.message)
+        }
+    }
 
     return (
         <>
@@ -22,7 +38,7 @@ export default function Graph({behaviors}){
                     )
                 })}
             </ul>
-            <Recording id={id}/>
+            <Recording id={id} handleAddRecord={handleAddRecord}/>
         </>
     )
 }

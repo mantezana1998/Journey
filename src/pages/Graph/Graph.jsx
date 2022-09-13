@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import Recording from '../../components/Recording/Recording';
 import { createRecord } from "../../utils/recordApi";
 import {useState} from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Graph({behaviors}){
 
@@ -24,6 +25,11 @@ export default function Graph({behaviors}){
     return (
         <>
             <h1>Graph Page</h1>
+            <Link to={{ pathname: `/dashboard/behavior/${id}/records` }}>
+              <button>
+                Show Recordings
+              </button>
+            </Link>
             <ul>
                 {Object.values(behaviors)
                 .filter((list) => list._id === id)

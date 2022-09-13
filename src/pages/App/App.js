@@ -14,12 +14,16 @@ import DashboardLayout from '../DashboardLayout/DashboardLayout';
 import Behaviors from '../Behaviors/Behaviors'
 import Graph from '../Graph/Graph';
 import { getAllBehaviors } from '../../utils/behaviorApi';
+import { showAllRecords } from '../../utils/recordApi';
+import RecordingList from '../../components/RecordingList/RecordingList';
 
 export default function App() {
 
   const [user, setUser] = useState(userService.getUser());
   const [behaviors, setBehaviors] = useState([]);
+  const [getRecords, setGetRecords] = useState([]);
   const [error, setError] = useState('');
+  const [check, setCheck] = useState('Checking value...')
 
   function handleSignUpOrLogin(){
     setUser(userService.getUser());
@@ -41,9 +45,40 @@ export default function App() {
 }
 
   useEffect(() => {
-    showAllBehaviors();
+    let isMounted = true;
+    showAllBehaviors()
+      .then(() => {
+        if(isMounted) {
+          setCheck("Done!")
+        }
+      });
+      return () => {
+        isMounted = false;
+      }
   }, []);
 
+  async function getAllRecords(){
+    try{
+      const data = await showAllRecords();
+      setGetRecords({...data.records})
+    }catch(err){
+      setError(err.message);
+      console.log(err, 'dashboard page')
+    }
+  }
+
+  useEffect(() => {
+    let isMounted = true;
+    getAllRecords()
+    .then(() => {
+      if(isMounted) {
+        setCheck("Done!")
+      }
+    });
+    return () => {
+      isMounted = false;
+    }
+  }, [])
 
   if(user){
     return (
@@ -58,7 +93,8 @@ export default function App() {
           <Route path='dashboard' element={<DashboardLayout user={user} />}>
             <Route index element={<Dashboard behaviors={behaviors} />}/>
             <Route path='behaviorform' element={<Behaviors />}/>
-            <Route path='behavior/:id' element={<Graph behaviors={behaviors} />}/>
+            <Route path='behavior/:id' element={<Graph behaviors={behaviors}/>}/>
+            <Route path='behavior/:id/records' element={<RecordingList behaviors={behaviors} getRecords={getRecords}/>}/>
           </Route>
         </Route>
       </Routes>

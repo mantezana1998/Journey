@@ -3,7 +3,8 @@ const Graph = require("../models/graph");
 
 module.exports = {
     showGraph,
-    createRecord
+    createRecord,
+    indexRecords
 };
 
 async function showGraph(req, res){
@@ -23,11 +24,21 @@ async function createRecord(req, res){
         const record = await Graph.create({
             time: req.body.time,
             occurrences: req.body.occurrences,
-            user: req.user
+            user: req.user,
+            behavior: res.behavior
         });
         res.status(201).json({ record: record });
     }catch(err){
         res.status(400).json({err});
         console.log(err)
+    }
+}
+
+async function indexRecords(req, res) {
+    try{
+        const records = await Graph.find({}).populate('user').exec()
+        res.status(200).json({records: records})
+    }catch{
+        res.status(400).json({ err })
     }
 }

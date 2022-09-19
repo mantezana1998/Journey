@@ -49,6 +49,18 @@
       <img src="https://img.shields.io/badge/-costasford@gmail.com-c14438?style=flat&logo=Gmail&``logoColor=white">
    </a>
 
+   <h5>Hing Pool</h5>
+
+   <a href="https://www.poonindustries.com/" target="_blank">
+      <img src="https://img.shields.io/badge/-Portfolio:_poonindustries.portfolio.io-darkgreen?style=flat&logo=medium"/>
+   </a>
+   <a href="https://www.linkedin.com/in/hing-poon/" target="_blank">
+      <img src="https://img.shields.io/badge/-linkedin.com/in/hing-poon-blue?style=flat&``logo=Linkedin&logoColor=white">
+   </a> 
+   <a href="mailto:hing.poon@gmail.com" target="_blank">
+      <img src="https://img.shields.io/badge/-hing.poon@gmail.com-c14438?style=flat&logo=Gmail&``logoColor=white">
+   </a>
+
 </div>
    
 <h1>:pencil: Description</h1>

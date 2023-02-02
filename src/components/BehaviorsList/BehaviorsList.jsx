@@ -1,12 +1,20 @@
-export default function BehaviorsList(){
+import { Link } from 'react-router-dom';
 
-    // const list = behaviors.map((b) => {
-    //     return (
-    //       <h1>{b.behaviorName}</h1>
-    //     );
-    // });
+export default function BehaviorsList({behaviors}){
 
-    return (
-        <h1>Hello</h1>
-    )
+  return (
+    <ul>
+      {Object.values(behaviors).map(function(keyName, keyIndex) {
+        return (
+          <li key={keyIndex}>
+            <Link to={{ pathname: `/dashboard/behavior/${keyName._id}` }}>
+              <button>
+                {keyName.behaviorName}
+              </button>
+            </Link>
+          </li>
+        )
+      })}
+    </ul>
+  )
 }

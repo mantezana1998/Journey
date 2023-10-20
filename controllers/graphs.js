@@ -36,7 +36,8 @@ async function createRecord(req, res){
 
 async function indexRecords(req, res) {
     try{
-        const records = await Graph.find({}).populate('user').exec()
+        const userID = req.user._id
+        const records = await Graph.find({ user: userID }).populate('user').exec()
         res.status(200).json({records: records})
     }catch{
         res.status(400).json({ err })

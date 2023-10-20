@@ -24,7 +24,8 @@ async function createBehavior(req, res) {
 
 async function index(req, res){
   try{
-    const behaviors = await Behavior.find({}).populate('user').exec()
+    const userID = req.user._id
+    const behaviors = await Behavior.find({ user: userID }).populate('user').exec()
     res.status(200).json({ behaviors: behaviors })
   }catch(err){
     res.status(400).json({ err })
